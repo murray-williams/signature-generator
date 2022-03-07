@@ -2,12 +2,12 @@
   <%= form_with model: signature do |form| %>
   <% if signature.errors.any? %>
   <div id="error_explanation">
-    <h2><%= pluralize(signature.errors.count, "error") %>
-      prohibited this user from being saved:</h2>
+    <h6><%= pluralize(signature.errors.count, "error") %>
+      prohibited this user from being saved:</h6>
 
       <ul>
         <% signature.errors.each do |error| %>
-        <li><%= error.full_message %></li>
+        <li class="alert alert-danger"><%= error.full_message %></li>
         <% end %>
       </ul>
     </div>
