@@ -1,17 +1,18 @@
 <div class="card-body">
   <%= form_with model: signature do |form| %>
-    <% if signature.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(signature.errors.count, "error") %>
-          prohibited this user from being saved:</h2>
+  <% if signature.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(signature.errors.count, "error") %>
+      prohibited this user from being saved:</h2>
 
-        <ul>
-          <% signature.errors.each do |error| %>
-            <li><%= error.full_message %></li>
-          <% end %>
-        </ul>
-      </div>
+      <ul>
+        <% signature.errors.each do |error| %>
+        <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
     <% end %>
+
 
     <div class="row g-3">
       <div class="col-12">
@@ -27,5 +28,5 @@
         <%= form.submit class: "btn btn-warning" %>
       </div>
     </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
