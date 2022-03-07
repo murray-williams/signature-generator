@@ -1,6 +1,7 @@
 <div class="row mb-4">
   <h2 class="mt-4 mb-4">Team Signatures</h2>
+  <%= render @signatures %>
 </div>
-<%= render @signatures %>
+
 
 <%= link_to 'Create Signature', new_signature_path, class: 'btn btn-warning' %>
