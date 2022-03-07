@@ -4,4 +4,11 @@ class SignaturesController < ApplicationController
     @signatures = Signature.all
   end
 
+  def show
+    @signature = Signature.find(params[:id])
+  end
+
+  private
+
+
 end
