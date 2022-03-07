@@ -24,6 +24,15 @@ class SignaturesController < ApplicationController
     end
   end
 
+  def destroy
+    @signature = Signature.find(params[:id])
+    @signature.destroy
+
+    respond_to do |format|
+      format.html { redirect_to signatures_url, notice: "Signature was successfully deleted." }
+    end
+  end
+
   private
 
   def signature_params
