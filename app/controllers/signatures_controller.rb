@@ -17,7 +17,7 @@ class SignaturesController < ApplicationController
 
     respond_to do |format|
       if @signature.save
-        format.html { redirect_to signature_url(@signature), notice: "Signature was successfully created." }
+        format.html { redirect_to root_path(@signature), notice: "Signature was successfully created." }
       else
         format.html { render :new, status: :unprocessable_entity }
       end
