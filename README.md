@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application generates Inn Style email signatures which can be used in emails clients such as Gmail. It's a pretty standard Rails 6 application. It also uses Bootstrap and Fontawesome to handle the layout and overall styling of the application.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ruby version - 3.0.1
+Rails version - 6.1.4
+Postgres version - 1.1
