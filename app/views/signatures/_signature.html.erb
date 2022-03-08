@@ -1,23 +1,23 @@
 <div class="col-md-4 mt-2 mb-4">
-  <div class="card user-card p-4">
-    <%= link_to signature, class: "text-dark" do %>
-    <div class="card-block">
-      <h4 class="card-title"><%= signature.fullname %></h4>
-      <h6 class="card-subtitle text-muted"><%= signature.job_title %></h6>
-      <div class="d-flex flex-row align-items-center">
-        <div class="pt-2 pe-2 pb-2">
-          <%= link_to signature, class: "text-dark" do %>
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          <% end %>
-        </div>
+  <%= link_to signature, class: "text-dark" do %>
+    <div class="card user-card p-4">
+      <div class="card-block">
+        <h4 class="card-title"><%= signature.fullname %></h4>
+        <h6 class="card-subtitle text-muted"><%= signature.job_title %></h6>
+        <div class="d-flex flex-row align-items-center">
+          <div class="pt-2 pe-2 pb-2">
+            <%= link_to signature, class: "text-dark" do %>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <% end %>
+          </div>
 
-        <div class="pt-2 pe-2 pb-2">
-          <%= link_to signature, method: :delete, data: { confirm: 'Are you sure?' }, class: "text-dark" do %>
-          <i class="fa fa-trash-o" aria-hidden="true"></i>
-          <% end %>
+          <div class="pt-2 pe-2 pb-2">
+            <%= link_to signature, method: :delete, data: { confirm: 'Are you sure?' }, class: "text-dark" do %>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
-    <% end %>
-  </div>
+  <% end %>
 </div>

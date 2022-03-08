@@ -1,11 +1,12 @@
 class SignaturesController < ApplicationController
 
   def index
-    @signatures = Signature.all
+    @signatures = Signature.all.order(fullname: :asc)
   end
 
   def show
     @signature = Signature.find(params[:id])
+
   end
 
   def new
